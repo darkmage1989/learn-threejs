@@ -1,8 +1,8 @@
-import {Physics, RigidBody} from "@react-three/rapier";
+import {Physics} from "@react-three/rapier";
 import { Environment, PointerLockControls, useEnvironment } from '@react-three/drei'
 import { Ground } from './Components/Ground/Ground.jsx'
 import { Player } from './Components/Player/Player.jsx'
-import {Cabrera} from "./Components/Cabrera/Cabrera.jsx";
+import {Buildings} from "../public/models/buildings/Buildings.jsx";
 
 export const App = () => {
   const envMap = useEnvironment({files: '/assets/kloppenheim.hdr'})
@@ -14,7 +14,7 @@ export const App = () => {
       <Physics gravity={[0, -20, 0]}>
         <Ground />
         <Player />
-            <Cabrera/>
+        <Buildings/>
       </Physics>
     </>
   )
