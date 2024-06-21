@@ -20,4 +20,5 @@ body,
   transform: translate3d(-50%, -50%, 0);
   border: 2px solid white;
   z-index: 2;
+  color: burlywood;
 }
